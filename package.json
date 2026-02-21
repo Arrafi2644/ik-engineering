@@ -7,10 +7,9 @@
   "keywords": ["express", "typescript", "api", "kr-engineering"],
   "license": "ISC",
   "scripts": {
-    "dev": "bun --watch src/server.ts",
-    "start": "bun src/server.ts",
-    "type-check": "bunx tsc --noEmit"
-  },
+  "build": "tsc",
+  "start": "node dist/server.js"
+},
   "type": "module",
   "dependencies": {
     "compression": "^1.8.1",
